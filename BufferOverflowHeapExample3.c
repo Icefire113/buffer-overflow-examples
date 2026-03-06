@@ -29,7 +29,7 @@ int main(void) {
 
 	// now lets suppose that we need to do some work on the 2nd buffer that we created in (2)
 	// and by some happenstance we end up writing someBuffer 40 bytes past someOtherBuff
-	*(uint64_t*)(someOtherBuff + 40) = (uint64_t)someBuffer;
+	*(uintptr_t*)(someOtherBuff + 40) = (uintptr_t)someBuffer;
 
 	// and lets check back in on our password
 	printf("My password is: %s\n", someStructInMemory->someString);
