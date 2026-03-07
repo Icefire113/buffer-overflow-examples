@@ -22,7 +22,7 @@ int main(void) {
 	char* someBuffer = malloc(10);
 
 	// (2)
-	someData_t* someStructInMemory = malloc(sizeof(someData_t));
+	string_t* someStructInMemory = malloc(sizeof(string_t));
 	someStructInMemory->someString = malloc(sizeof(char) * 32);
 
 	// (3)
