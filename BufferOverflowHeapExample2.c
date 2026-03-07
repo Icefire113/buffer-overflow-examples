@@ -3,10 +3,11 @@
 #include<string.h>
 #include<stdint.h>
 
-typedef struct someData_s {
+// A custom implementation of a string type for C
+typedef struct string {
 	int32_t numberOfThings;
 	char * someString;
-} someData_t;
+} string_t;
 
 uint64_t hash_fn(uint64_t curHash, char letter) {
 	// THIS IS A BAD HASH FUNCTION, DO NOT USE IT
