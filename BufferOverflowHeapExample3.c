@@ -44,7 +44,6 @@ int main(void) {
 	someStructInMemory->numberOfThings = strlen(someStructInMemory->someString);
 
 	printf("My password is: %s\n", someStructInMemory->someString);
-	printf("My password is: %d chars in length\n", someStructInMemory->numberOfThings);
 
 	// now lets suppose that we need to do some work on the file header that we created
 	// and we need to set the entries to be the buffer that contains our string in (1)
