@@ -7,7 +7,7 @@ int main(void) {
     char *public_data = malloc(sizeof(char) * 20);
     printf("secret: %p\npublic: %p\n", some_secret_data, public_data);
 
-    const char *k = "SECRETDATA_SECRET_DATA_THATWEAREWRITINGTOOMUCHTOSERFAAFAFAFAFAFAFAFAFAFA";
+    const char *k = "SECRET_DATA_SECRET_DATA_SECRET_DATA_SECRET_DATA_SECRET_DATA_SECRET_DATA_";
     int n = strlen(k) + 1;
     memcpy(some_secret_data, k, n);
 
